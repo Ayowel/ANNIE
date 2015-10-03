@@ -9,15 +9,13 @@
 int main(int argc, char *argv[])
 {
     if(SDL_Init(SDL_INIT_VIDEO) == -1)
-    {
         return -1;
-    }
     if(TTF_Init()==-1)
-    {
         return -1;
-    }
-    SDL_Event event;
     SDL_Surface *screen=SDL_SetVideoMode(640, 480, 32, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_RESIZABLE);
+    if(screen==NULL)
+        return -1;
+    SDL_Event event;
     SDL_Rect src={0,0,0,0};
     while(SDL_GetTicks()<5000)
     {
