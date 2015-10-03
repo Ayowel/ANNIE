@@ -1,1 +1,2 @@
-This repository is still in development, come back later :) .
+Projet devant à terme être basé sur l'API Riot et devant fournir nombre d'outils hors jeu.
+Ce dépot est encore en développement, repassez plus tard si vous souhaitez seulement utiliser ce qui en ressortira :) .
